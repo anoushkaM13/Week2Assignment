@@ -11,8 +11,8 @@ public interface DepartmentRepository extends JpaRepository<Department, Long> {
     @Query(value = "SELECT COUNT(*) AS count FROM public.employees WHERE dept_id = ?", nativeQuery = true)
     int getEmpCount(Long id);
 
-    @Query(value = "UPDATE public.department SET team_size = ? WHERE id = ?", nativeQuery = true)
-    void updCount(int tot,  long id);
+//    @Query(value = "UPDATE public.department SET team_size = ? WHERE id = ?", nativeQuery = true)
+//    void updCount(int tot,  long id);
 
 //    @Query(value = "UPDATE public.department SET team_size = (SELECT COUNT(*) AS count FROM public.employees WHERE dept_id = public.department.id) WHERE id = ? ", nativeQuery = true)
 //    int updEmpCount(Long id);

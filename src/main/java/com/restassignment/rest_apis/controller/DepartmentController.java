@@ -1,6 +1,5 @@
 package com.restassignment.rest_apis.controller;
 
-import com.restassignment.rest_apis.dto.EmployeeDTO;
 import com.restassignment.rest_apis.entity.Department;
 import com.restassignment.rest_apis.service.DepartmentService;
 import lombok.AllArgsConstructor;

@@ -1,10 +1,7 @@
 package com.restassignment.rest_apis.service.impl;
 
-import com.restassignment.rest_apis.dto.EmployeeDTO;
 import com.restassignment.rest_apis.entity.Department;
-import com.restassignment.rest_apis.exception.DatabaseError;
 import com.restassignment.rest_apis.exception.DuplicateException;
-import com.restassignment.rest_apis.exception.InvalidPayload;
 import com.restassignment.rest_apis.exception.RecordNotFound;
 import com.restassignment.rest_apis.repository.DepartmentRepository;
 import com.restassignment.rest_apis.service.DepartmentService;

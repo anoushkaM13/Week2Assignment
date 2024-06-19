@@ -1,7 +1,6 @@
 package com.restassignment.rest_apis.controller;
 
 import com.restassignment.rest_apis.dto.EmployeeDTO;
-import com.restassignment.rest_apis.entity.Employee;
 import com.restassignment.rest_apis.service.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

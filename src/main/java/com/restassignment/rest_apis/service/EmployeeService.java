@@ -1,7 +1,6 @@
 package com.restassignment.rest_apis.service;
 
 import com.restassignment.rest_apis.dto.EmployeeDTO;
-import com.restassignment.rest_apis.entity.Employee;
 
 import java.util.List;
 
