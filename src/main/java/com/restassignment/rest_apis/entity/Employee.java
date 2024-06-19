@@ -31,7 +31,7 @@ public class Employee {
     private String role;
 
     @ManyToOne
-    @JoinColumn(name = "dept_id", referencedColumnName = "ID", nullable = false)
+    @JoinColumn(name = "dept_id", referencedColumnName = "id", nullable = false)
     private Department department;
 
 }

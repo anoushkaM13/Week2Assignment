@@ -19,6 +19,11 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
+    @ExceptionHandler(DuplicateException.class)
+    public ResponseEntity<String> handleDuplicateEmailException(DuplicateException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.CONFLICT);
+    }
+
     @ExceptionHandler(RecordNotFound.class)
     public ResponseEntity<String> handleRecordNotFound (RecordNotFound ex){
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
@@ -28,4 +33,6 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleException(Exception ex) {
         return new ResponseEntity<>("An unexpected error occurred: " + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
+
 }

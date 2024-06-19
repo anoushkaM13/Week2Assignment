@@ -17,10 +17,10 @@ import java.util.Set;
 @Table(name = "department")
 public class Department {
     @Id
-    @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "department_name", nullable = false, unique = true)
+    @Column(name = "department_name", unique = true)
     private String department_name;
 
     @Column(name = "team_size")

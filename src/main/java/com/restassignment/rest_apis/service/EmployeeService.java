@@ -10,11 +10,11 @@ public interface EmployeeService {
 
     List<EmployeeDTO> getEmployeeByDepartment(Long departmentId);
 
-    Employee getEmpById(Long empId);
+    EmployeeDTO getEmpById(Long empId);
 
-    List<Employee> getAllEmp();
+    List<EmployeeDTO> getAllEmp();
 
-    Employee updateEmp(Long empId, Employee updatedEmpDet);
+    EmployeeDTO updateEmp(Long empId, EmployeeDTO updatedEmpDet);
 
     void deleteEmp(Long empId);
 }
